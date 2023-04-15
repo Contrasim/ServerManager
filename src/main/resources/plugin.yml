@@ -1,0 +1,40 @@
+name: ServerManager
+version: '${project.version}'
+main: me.contrasim.servermanager.ServerManagerSpigot
+api-version: 1.13
+authors: [ contrasim ]
+description: A server/network management plugin
+website: contrasim.ml
+commands:
+  playerlimit:
+    aliases:
+      - setplayerlimit
+    description: Allows server admins to set the player limit
+  maintenance:
+    aliases:
+      - maintenancemode
+    description: Allows server admins to enable maintenance mode
+  clearchat:
+    aliases:
+      - chatclear
+      - cc
+    description: Allows servers mods to clear chat.
+  mutechat:
+    aliases:
+      - disablechat
+      - chatmute
+      - togglechat
+    description: Allows server mods to mute chat.
+  shutdown:
+    aliases:
+      - stop
+    description: Allows server admins to restart the server after a certain amount of time
+  killserver:
+    description: Allows server admins to instantly kill the server without saving any data (Used in dire emergancy)
+  consolecommand:
+    description: Allows server admins to execute a command from console
+  crash:
+    aliases:
+      - crashplayer
+    description: Allows server admins to crash any players client
+
